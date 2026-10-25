@@ -1,0 +1,2 @@
+google.com, pub-3470141996795841, DIRECT, f08c47fec0942fa0
+# TODO(T079): add the ironSource / Unity Ads lines from the LevelPlay dashboard (Settings > app-ads.txt); the list needs a login, the agent could not fetch it.
