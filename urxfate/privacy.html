@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- DRAFT for ct3 (T063, 2026-11-18): ads, in-app purchases, Firebase. Not published. To be reviewed by a lawyer before the public release. -->
+<!-- Updated for ct4 (D204, 2026-11-22): accounts, Cloud Save, Play Games, account deletion. To be reviewed by a lawyer before the public release. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -9,17 +9,17 @@
 </head>
 <body>
 <main>
-<p class="nav"><a href="index.html">UrXFate</a> · <a href="#en">English</a> · <a href="#vi">Tiếng Việt</a> · <a href="terms.html">Terms of Service / Điều khoản sử dụng</a></p>
+<p class="nav"><a href="index.html">UrXFate</a> · <a href="#en">English</a> · <a href="#vi">Tiếng Việt</a> · <a href="terms.html">Terms of Service / Điều khoản sử dụng</a> · <a href="delete-account.html">Delete account / Xoá tài khoản</a></p>
 
 <section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p>Effective date: November 18, 2026</p>
+<p>Effective date: November 22, 2026</p>
 <p>This policy explains how the mobile game <b>UrXFate: Life Simulator</b> ("the game"), published by <b>Aanixel</b> ("we"), handles data. It applies to the current test version of the game.</p>
 
 <h2>1. Summary</h2>
 <ul>
-<li>We never ask for your name, e-mail address, phone number, contacts or precise location. The game has no accounts.</li>
-<li>Your progress and settings are saved only on your device.</li>
+<li>We never ask for your e-mail address, phone number, contacts or precise location.</li>
+<li>The game creates a game account for you (anonymous, or linked to Google Play Games) and saves your progress online so it is not lost when you change phones. You can delete the account at any time (section 2a).</li>
 <li>The game shows ads from Google AdMob, sells optional in-app purchases through Google Play, and uses Google Firebase for usage statistics, settings updates and crash reports. These services process device data as described below.</li>
 </ul>
 
@@ -32,18 +32,24 @@
 <h2>1c. Usage statistics and crash reports (Google Firebase)</h2>
 <p>Firebase Analytics records events such as the start and end of a life (age, branch, minutes played), ads offered and watched, and purchases, with an app instance ID and device information (model, OS version, language, approximate region). Firebase Crashlytics sends crash reports (stack trace, device state, installation ID). Firebase Remote Config downloads game settings, such as the number of free lives. We use this data only to fix bugs and tune the game; we do not sell it. See <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</p>
 
-<h2>2. Data stored on your device</h2>
+<h2>2. Your game account and saved progress</h2>
+<p>The game is online. When you open it, it signs you in with <b>Unity Authentication</b>, either anonymously or with <b>Google Play Games</b> if it is available on your phone. This gives you a player ID. Your progress is saved with <b>Unity Cloud Save</b> under that player ID, and a copy is kept on your device. If you sign in on a second device with a different save, the game keeps the larger save and stores the other as a backup in your account. Google Play Games also receives your achievements and leaderboard scores and shows your Play Games name on leaderboards. Data is sent over encrypted connections. See <a href="https://unity.com/legal/privacy-policy">Unity's Privacy Policy</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+<h2>2a. Deleting your account</h2>
+<p>In the game: <b>Settings &gt; Delete account</b>. This deletes your cloud save and its backups, your Unity player account and the save on your device. Purchases are not deleted: Google Play keeps them and restores them. Without the game, see <a href="delete-account.html">how to request deletion</a>.</p>
+
+<h2>2b. Data stored on your device</h2>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Where</th></tr>
-<tr><td>lives played, choices, unlocked endings, "Memories", settings (language, text size, content filter, speed)</td><td>to run the game and keep your progress</td><td>only on your device</td></tr>
+<tr><td>lives played, choices, unlocked endings, "Memories", settings (language, text size, content filter, speed)</td><td>to run the game and keep your progress</td><td>on your device and in your cloud save</td></tr>
 </table>
-<p>Uninstalling the game or clearing its storage deletes this data. We cannot see or recover it.</p>
+<p>Uninstalling the game deletes the copy on your device; your cloud save stays until you delete your account.</p>
 
 <h2>3. Google Play</h2>
 <p>You install the game through Google Play. Google processes data such as your Google account, install and crash information under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. If you join the test program, Google shares your feedback and tester status with us; we use it only to improve the game.</p>
 
-<h2>4. Future versions</h2>
-<p>Later versions may add online saving or Google Play Games. Before any such version is released, we will update this page and ask for consent where the law requires it.</p>
+<h2>4. Changes</h2>
+<p>If a later version handles data in a new way, we will update this page first and ask for consent where the law requires it.</p>
 
 <h2>5. Age</h2>
 <p>The game is intended for players aged 16 and over. It is not directed at children, and we do not knowingly collect any data from children.</p>
@@ -59,13 +65,13 @@
 
 <section id="vi" lang="vi">
 <h1>Chính sách quyền riêng tư</h1>
-<p>Ngày hiệu lực: 18/11/2026</p>
+<p>Ngày hiệu lực: 22/11/2026</p>
 <p>Chính sách này giải thích cách trò chơi di động <b>UrXFate: Life Simulator</b> ("trò chơi"), do <b>Aanixel</b> ("chúng tôi") phát hành, xử lý dữ liệu. Chính sách áp dụng cho phiên bản thử nghiệm hiện tại.</p>
 
 <h2>1. Tóm tắt</h2>
 <ul>
-<li>Chúng tôi không hỏi tên, email, số điện thoại, danh bạ hay vị trí chính xác của bạn. Trò chơi không có tài khoản.</li>
-<li>Tiến trình và cài đặt chỉ được lưu trên thiết bị của bạn.</li>
+<li>Chúng tôi không hỏi email, số điện thoại, danh bạ hay vị trí chính xác của bạn.</li>
+<li>Trò chơi tạo cho bạn một tài khoản trò chơi (ẩn danh, hoặc gắn với Google Play Games) và lưu tiến trình trực tuyến để không mất khi đổi máy. Bạn xoá được tài khoản bất cứ lúc nào (mục 2a).</li>
 <li>Trò chơi hiện quảng cáo của Google AdMob, bán gói mua tuỳ chọn qua Google Play, và dùng Google Firebase để thống kê cách chơi, cập nhật cài đặt và báo lỗi. Các dịch vụ này xử lý dữ liệu thiết bị như mô tả bên dưới.</li>
 </ul>
 
@@ -78,18 +84,24 @@
 <h2>1c. Thống kê và báo lỗi (Google Firebase)</h2>
 <p>Firebase Analytics ghi các sự kiện như lúc bắt đầu và kết thúc một đời (tuổi, nhánh, số phút chơi), quảng cáo được mời và đã xem, và giao dịch, kèm mã cài đặt ứng dụng và thông tin thiết bị (đời máy, phiên bản hệ điều hành, ngôn ngữ, vùng gần đúng). Firebase Crashlytics gửi báo cáo lỗi (vết lỗi, trạng thái máy, mã cài đặt). Firebase Remote Config tải cài đặt trò chơi, ví dụ số đời miễn phí. Chúng tôi chỉ dùng dữ liệu này để sửa lỗi và chỉnh trò chơi, không bán dữ liệu. Xem <a href="https://firebase.google.com/support/privacy">quyền riêng tư của Firebase</a>.</p>
 
-<h2>2. Dữ liệu lưu trên thiết bị</h2>
+<h2>2. Tài khoản trò chơi và tiến trình đã lưu</h2>
+<p>Trò chơi chạy trực tuyến. Khi mở, trò chơi đăng nhập cho bạn bằng <b>Unity Authentication</b>, ẩn danh hoặc bằng <b>Google Play Games</b> nếu máy có. Bạn nhận một mã người chơi. Tiến trình được lưu bằng <b>Unity Cloud Save</b> theo mã đó, và một bản lưu trên thiết bị. Nếu bạn đăng nhập trên máy thứ hai có bản lưu khác, trò chơi giữ bản lớn hơn và cất bản kia làm bản dự phòng trong tài khoản. Google Play Games cũng nhận thành tựu, điểm bảng xếp hạng và hiện tên Play Games của bạn trên bảng xếp hạng. Dữ liệu được gửi qua kết nối mã hoá. Xem <a href="https://unity.com/legal/privacy-policy">Chính sách quyền riêng tư của Unity</a> và <a href="https://policies.google.com/privacy">của Google</a>.</p>
+
+<h2>2a. Xoá tài khoản</h2>
+<p>Trong trò chơi: <b>Cài đặt &gt; Xoá tài khoản</b>. Thao tác này xoá bản lưu trên đám mây và các bản dự phòng, tài khoản người chơi Unity và bản lưu trên thiết bị. Gói đã mua không bị xoá: Google Play giữ và khôi phục. Không cần mở trò chơi: xem <a href="delete-account.html">cách yêu cầu xoá</a>.</p>
+
+<h2>2b. Dữ liệu lưu trên thiết bị</h2>
 <table>
 <tr><th>Dữ liệu</th><th>Mục đích</th><th>Ở đâu</th></tr>
-<tr><td>các đời đã sống, lựa chọn, kết cục đã mở, "Ký ức", cài đặt (ngôn ngữ, cỡ chữ, bộ lọc nội dung, tốc độ)</td><td>để chạy trò chơi và giữ tiến trình</td><td>chỉ trên thiết bị của bạn</td></tr>
+<tr><td>các đời đã sống, lựa chọn, kết cục đã mở, "Ký ức", cài đặt (ngôn ngữ, cỡ chữ, bộ lọc nội dung, tốc độ)</td><td>để chạy trò chơi và giữ tiến trình</td><td>trên thiết bị và trong bản lưu đám mây của bạn</td></tr>
 </table>
-<p>Gỡ trò chơi hoặc xoá dữ liệu ứng dụng sẽ xoá dữ liệu này. Chúng tôi không xem được và không khôi phục được.</p>
+<p>Gỡ trò chơi sẽ xoá bản trên thiết bị; bản lưu đám mây vẫn còn cho tới khi bạn xoá tài khoản.</p>
 
 <h2>3. Google Play</h2>
 <p>Bạn cài trò chơi qua Google Play. Google xử lý các dữ liệu như tài khoản Google, thông tin cài đặt và lỗi theo <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>. Nếu bạn tham gia chương trình thử nghiệm, Google chia sẻ với chúng tôi góp ý và trạng thái người thử của bạn; chúng tôi chỉ dùng thông tin đó để cải thiện trò chơi.</p>
 
-<h2>4. Các phiên bản sau</h2>
-<p>Các phiên bản sau có thể thêm lưu trực tuyến hoặc Google Play Games. Trước khi phát hành phiên bản đó, chúng tôi sẽ cập nhật trang này và xin đồng ý khi pháp luật yêu cầu.</p>
+<h2>4. Thay đổi</h2>
+<p>Nếu phiên bản sau xử lý dữ liệu theo cách mới, chúng tôi sẽ cập nhật trang này trước và xin đồng ý khi pháp luật yêu cầu.</p>
 
 <h2>5. Độ tuổi</h2>
 <p>Trò chơi dành cho người chơi từ 16 tuổi. Trò chơi không hướng tới trẻ em và chúng tôi không cố ý thu thập dữ liệu nào từ trẻ em.</p>
